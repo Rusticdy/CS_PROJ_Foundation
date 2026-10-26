@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Umbrella Corporation. Advancing life sciences, biotechnology and a healthier tomorrow."
+    />
+    <title>Life. Reimagined. — Umbrella Corporation</title>
+    <link rel="icon" href="assets/umbrella.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="Umbrella Corporation home"
+        ><img src="assets/umbrella.svg" width="30" height="30" alt="" /><span
+          >UMBRELLA<span class="brand-sub">CORPORATION</span></span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        Menu <span>＋</span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Overview</a
+        ><a href="vision.html">Our vision</a><a href="research.html">Research</a
+        ><a href="access.html">Personnel access</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="announcement">
+        <span class="status-dot"></span> A new era of possibility.
+        <a href="research.html">Explore our research <span>↗</span></a>
+      </div>
+      <section
+        class="hero-carousel"
+        data-interval="18000"
+        aria-label="Umbrella highlights"
+        aria-roledescription="carousel"
+      >
+        <div class="carousel-track">
+          <section
+            class="hero hero-slide"
+            id="hero-slide-1"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="1 of 2: Life reimagined"
+            data-title="Life reimagined"
+          >
+            <div class="hero-copy">
+              <p class="eyebrow">UMBRELLA CORPORATION · EST. 1968</p>
+              <h1>Life.<br />Reimagined<span class="red">.</span></h1>
+              <p class="lead">
+                Tomorrow isn’t something we wait for.<br />It’s something we
+                create.
+              </p>
+              <a class="button" href="vision.html"
+                >Discover our vision <span>↗</span></a
+              >
+              <p class="hero-note">SCIENCE IN SERVICE OF HUMANITY.</p>
+            </div>
+            <div class="logo-stage">
+              <img
+                class="hero-emblem"
+                src="assets/umbrella-premium.svg"
+                width="640"
+                height="640"
+                alt="Sculptural Umbrella emblem with polished red and pearl silver panels"
+              />
+              <div class="art-caption">
+                <span>U / 01</span
+                ><span>THE NEXT GENERATION OF LIFE SCIENCES</span>
+              </div>
+            </div>
+          </section>
+          <section
+            class="hero-slide headquarters-slide"
+            id="hero-slide-2"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="2 of 2: For a healthier world"
+            data-title="For a healthier world"
+            hidden
+          >
+            <img
+              class="headquarters-image"
+              src="assets/umbrella-hq.png"
+              width="1967"
+              height="799"
+              alt="Umbrella headquarters overlooking a city skyline, with scientists gathered beside a red and white Umbrella emblem"
+            />
+            <div class="headquarters-copy">
+              <p class="eyebrow">UMBRELLA CORPORATION / A SHARED AMBITION</p>
+              <h2>For a<br />healthier world<span>.</span></h2>
+              <p>Extraordinary science. A better tomorrow.</p>
+              <a class="button" href="vision.html"
+                >Discover our vision <span>↗</span></a
+              >
+            </div>
+          </section>
+        </div>
+        <div class="slide-controls" hidden>
+          <span class="slide-counter" aria-live="off" aria-atomic="true"
+            >01 / 02</span
+          >
+          <div class="slide-selectors" aria-label="Choose a slide"></div>
+          <div class="slide-timer">
+            <span class="timer-label" aria-hidden="true">Next in 18s</span>
+            <span class="timer-track" aria-hidden="true"
+              ><span class="timer-progress"></span
+            ></span>
+            <button
+              type="button"
+              class="rotation-toggle"
+              aria-label="Pause automatic slides"
+              aria-pressed="false"
+            >
+              Pause
+            </button>
+          </div>
+          <div class="slide-arrows">
+            <button
+              type="button"
+              data-direction="-1"
+              aria-label="Previous slide"
+            >
+              ←
+            </button>
+            <button type="button" data-direction="1" aria-label="Next slide">
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="world-story" aria-labelledby="world-story-title">
+        <div class="world-story-copy">
+          <p class="eyebrow">A HEALTHIER WORLD / REIMAGINED</p>
+          <h2 id="world-story-title">
+            Better science.<br />Brighter possibilities<span class="red"
+              >.</span
+            >
+          </h2>
+          <p>
+            It starts with an idea. It grows through discovery. Our vision
+            brings people and science together to imagine a healthier world.
+          </p>
+          <a class="text-link" href="research.html"
+            >Explore the possibilities ↗</a
+          >
+        </div>
+        <div class="world-story-image">
+          <img
+            src="assets/umbrella-hq.png"
+            width="1967"
+            height="799"
+            loading="lazy"
+            alt="Scientists at Umbrella headquarters, looking out toward the city and tomorrow’s possibilities"
+          />
+          <span>ONE VISION. A WORLD OF POSSIBILITY.</span>
+        </div>
+      </section>
+      <section
+        class="product-showcase"
+        aria-label="Umbrella product highlights"
+      >
+        <article
+          class="product-panel product-canis"
+          aria-labelledby="canis-title"
+        >
+          <img
+            class="product-image"
+            src="Images/Futuristic%20Silver%20Pill%20Case%20in%20Laboratory.png"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            alt="Silver Umbrella medication case with white tablets on a bright laboratory counter"
+          />
+          <div class="product-copy">
+            <p class="eyebrow">UMBRELLA PHARMACEUTICALS · BESTSELLER</p>
+            <h2 id="canis-title">CANIS.</h2>
+            <p class="product-tagline">
+              The next evolution in everyday wellness.
+            </p>
+            <p class="product-description">
+              Our most trusted breakthrough in regenerative care.
+              Precision-engineered for a healthier, stronger tomorrow.
+            </p>
+          </div>
+        </article>
+        <article
+          class="product-panel product-revitalize"
+          aria-labelledby="revitalize-title"
+        >
+          <img
+            class="product-image"
+            src="Images/Premium%20Umbrella%20Serum%20Lab%20Display.png"
+            width="1254"
+            height="1254"
+            loading="lazy"
+            alt="Golden Umbrella hair restoration serum in a glass dropper bottle beside its silver packaging"
+          />
+          <div class="product-copy">
+            <p class="eyebrow">UMBRELLA BIOTECHNOLOGY · NEW RELEASE</p>
+            <h2 id="revitalize-title">Revitalize.</h2>
+            <p class="product-tagline">A new beginning for your hair.</p>
+            <p class="product-description">
+              Introducing our next generation hair restoration formula. Advanced
+              science, effortless care, renewed confidence.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="intro section-pad">
+        <p class="eyebrow">PROGRESS IS IN OUR DNA</p>
+        <div>
+          <h2>Small discoveries.<br />Extraordinary possibilities.</h2>
+          <p>
+            At Umbrella, curiosity is our starting point. From advanced medicine
+            to the frontiers of biotechnology, we imagine what comes next — and
+            work to bring it closer.
+          </p>
+          <a class="text-link" href="research.html"
+            >Meet the science behind tomorrow ↗</a
+          >
+        </div>
+      </section>
+      <section class="feature-grid">
+        <a class="feature feature-light" href="research.html"
+          ><p class="eyebrow">01 / RESEARCH & DEVELOPMENT</p>
+          <h3>A better future.<br />At a cellular level.</h3>
+          <div class="cell-art" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="feature-link">Explore our research <b>↗</b></span></a
+        ><a class="feature feature-dark" href="access.html"
+          ><p class="eyebrow">02 / PERSONNEL PORTAL</p>
+          <h3>A Sneak Peak<br />of the Future</h3>
+          <img class="feature-logo" src="assets/umbrella.svg" alt="" /><span
+            class="feature-link"
+            >Enter the portal <b>↗</b></span
+          ></a
+        >
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="index.html"
+        ><img
+          src="assets/umbrella.svg"
+          width="24"
+          height="24"
+          alt="Umbrella logo"
+        /><span>UMBRELLA</span></a
+      >
+      <p>Our business is life itself.</p>
+      <a href="access.html">Personnel access ↗</a>
+    </footer>
+  </body>
+</html>

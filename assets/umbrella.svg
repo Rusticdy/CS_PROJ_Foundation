@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="#e52d36" d="M50 3 83 17 97 50 83 83 50 97 17 83 3 50 17 17Z" />
+  <path
+    fill="#fff"
+    d="M50 3v47L17 17ZM97 50H50l33-33ZM50 97V50l33 33ZM3 50h47L17 83Z"
+  />
+  <path
+    fill="none"
+    stroke="#d9d9dd"
+    stroke-width="1"
+    d="M50 3 83 17 97 50 83 83 50 97 17 83 3 50 17 17Z"
+  />
+</svg>

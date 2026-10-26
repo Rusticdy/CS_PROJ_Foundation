@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none">
+  <title>Umbrella emblem in polished red and pearl silver</title>
+  <defs>
+    <linearGradient
+      id="red"
+      x1="140"
+      y1="65"
+      x2="470"
+      y2="540"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#ff777c" />
+      <stop offset=".28" stop-color="#ed3442" />
+      <stop offset=".65" stop-color="#c81425" />
+      <stop offset="1" stop-color="#7e0616" />
+    </linearGradient>
+    <linearGradient
+      id="silver"
+      x1="160"
+      y1="100"
+      x2="500"
+      y2="560"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#fff" />
+      <stop offset=".38" stop-color="#f6f7f9" />
+      <stop offset=".65" stop-color="#d7dbe1" />
+      <stop offset="1" stop-color="#a4aab4" />
+    </linearGradient>
+    <linearGradient
+      id="edge"
+      x1="100"
+      y1="60"
+      x2="480"
+      y2="560"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#fff" stop-opacity=".95" />
+      <stop offset=".55" stop-color="#fff" stop-opacity=".3" />
+      <stop offset="1" stop-color="#69717d" stop-opacity=".5" />
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow
+        dx="0"
+        dy="25"
+        stdDeviation="17"
+        flood-color="#222838"
+        flood-opacity=".17"
+      />
+      <feDropShadow
+        dx="0"
+        dy="3"
+        stdDeviation="2"
+        flood-color="#111827"
+        flood-opacity=".15"
+      />
+    </filter>
+  </defs>
+  <g
+    filter="url(#shadow)"
+    stroke="url(#edge)"
+    stroke-width="1.8"
+    stroke-linejoin="round"
+  >
+    <path fill="url(#red)" d="M320 70 Q374 111 497 143 L320 320Z" />
+    <path fill="url(#silver)" d="M497 143 Q495 234 570 320 L320 320Z" />
+    <path fill="url(#red)" d="M570 320 Q495 399 497 497 L320 320Z" />
+    <path fill="url(#silver)" d="M497 497 Q400 500 320 570 L320 320Z" />
+    <path fill="url(#red)" d="M320 570 Q240 500 143 497 L320 320Z" />
+    <path fill="url(#silver)" d="M143 497 Q145 399 70 320 L320 320Z" />
+    <path fill="url(#red)" d="M70 320 Q145 234 143 143 L320 320Z" />
+    <path fill="url(#silver)" d="M143 143 Q266 111 320 70 L320 320Z" />
+  </g>
+</svg>

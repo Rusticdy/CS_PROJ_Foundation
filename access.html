@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Umbrella Corporation. Advancing life sciences, biotechnology and a healthier tomorrow."
+    />
+    <title>Personnel access — Umbrella Corporation</title>
+    <link rel="icon" href="assets/umbrella.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="Umbrella Corporation home"
+        ><img src="assets/umbrella.svg" width="30" height="30" alt="" /><span
+          >UMBRELLA<span class="brand-sub">CORPORATION</span></span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        Menu <span>＋</span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Overview</a><a href="vision.html">Our vision</a
+        ><a href="research.html">Research</a
+        ><a href="access.html" aria-current="page">Personnel access</a>
+      </nav>
+    </header>
+    <main id="main" class="access-main">
+      <section class="access-intro">
+        <p class="eyebrow">03 / SECURE PERSONNEL PORTAL</p>
+        <h1>Access.<br />By invitation<span class="red">.</span></h1>
+        <p class="lead">Extraordinary work.<br />Exceptional discretion.</p>
+        <div class="security-note">
+          <span class="status-dot"></span> UMBRELLA INTERNAL NETWORK
+        </div>
+        <img class="access-watermark" src="assets/umbrella.svg" alt="" />
+      </section>
+      <section class="form-panel" id="login-panel">
+        <div class="panel-top">
+          <img src="assets/umbrella.svg" width="36" height="36" alt="" /><span
+            >SECURE ACCESS / 01</span
+          >
+        </div>
+        <h2>Welcome, personnel.</h2>
+        <p>Verify your credentials to access the archive.</p>
+        <form id="access-form" novalidate>
+          <div class="field">
+            <label for="personnel">Personnel ID</label
+            ><input
+              id="personnel"
+              name="personnel"
+              placeholder="UC-0001"
+              required
+              minlength="7"
+              maxlength="7"
+              pattern="UC-[0-9]{4}"
+              autocomplete="off"
+              aria-describedby="personnel-help personnel-error"
+            /><small id="personnel-help"
+              >Format: UC- followed by four digits.</small
+            ><span class="error" id="personnel-error"></span>
+          </div>
+          <div class="field">
+            <label for="email">Corporate email</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="researcher@umbrella.corp"
+              required
+              maxlength="100"
+              autocomplete="off"
+              aria-describedby="email-error"
+            /><span class="error" id="email-error"></span>
+          </div>
+          <div class="field">
+            <label for="password">Access password</label>
+            <div class="password-wrap">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Enter access password"
+                required
+                minlength="8"
+                maxlength="32"
+                autocomplete="off"
+                aria-describedby="password-help password-error"
+              /><button
+                type="button"
+                id="toggle-password"
+                aria-label="Show password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+            </div>
+            <small id="password-help"
+              >8–32 characters, with uppercase, lowercase and a number.</small
+            ><span class="error" id="password-error"></span>
+          </div>
+          <button class="button submit-button" type="submit">
+            Verify & enter <span>↗</span>
+          </button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section
+        id="classified-panel"
+        class="classified-panel"
+        hidden
+        tabindex="-1"
+      >
+        <div class="panel-top">
+          <span class="status-dot"></span
+          ><span>IDENTITY VERIFIED · SESSION ACTIVE</span>
+        </div>
+        <p class="eyebrow">LEVEL 04 / RESTRICTED ARCHIVE</p>
+        <h2>Welcome to<br />the other side.</h2>
+        <p class="archive-intro">
+          Special projects division. For your eyes only.
+        </p>
+        <article class="archive-item">
+          <span>PROJECT / T</span>
+          <h3>T-Virus programme</h3>
+          <p>
+            Special projects archive. Access limited to cleared personnel.
+            Research records remain sealed.
+          </p>
+          <b>CLASSIFIED</b>
+        </article>
+        <article class="archive-item">
+          <span>FACILITY / 01</span>
+          <h3>The Hive</h3>
+          <p>
+            Underground research complex. Facility status: isolated. External
+            communications suspended.
+          </p>
+          <b>RESTRICTED</b>
+        </article>
+        <button class="button" id="sign-out">End session ↗</button>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="index.html"
+        ><img
+          src="assets/umbrella.svg"
+          width="24"
+          height="24"
+          alt="Umbrella logo"
+        /><span>UMBRELLA</span></a
+      >
+      <p>Our business is life itself.</p>
+      <a href="access.html">Personnel access ↗</a>
+    </footer>
+  </body>
+</html>
