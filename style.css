@@ -1551,6 +1551,159 @@ footer > a:last-child {
   margin-left: auto;
 }
 
+.purpose-section {
+  display: block;
+  padding: clamp(80px, 9vw, 140px) 6%;
+  text-align: center;
+}
+.purpose-section > div {
+  max-width: 860px;
+  margin-inline: auto;
+}
+.purpose-section .eyebrow {
+  margin-bottom: 30px;
+}
+.purpose-section h2 {
+  font-size: clamp(40px, 5.6vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -2.5px;
+  margin: 0 0 36px;
+}
+.purpose-section p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 0 auto 22px;
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.85;
+  color: #62656d;
+}
+.purpose-section p:last-child { margin-bottom: 0; }
+
+/* One quiet silver helix flows behind the introduction and both links. */
+.dna-story {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #fafbfd;
+}
+.dna-strand {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  opacity: 0.38;
+  pointer-events: none;
+  z-index: -1;
+}
+.dna-story .intro {
+  background: linear-gradient(90deg, #fafbfda8, #fafbfde8 45%, #fafbfda3);
+}
+.dna-story .feature-light {
+  background: #f0f3f7b8;
+  border: 1px solid #e0e5eb;
+}
+.dna-story .feature-dark {
+  background: #202833ed;
+  border: 1px solid #ffffff20;
+}
+.dna-story .feature .eyebrow,
+.dna-story .feature-link {
+  z-index: 1;
+}
+.dna-story .feature .eyebrow { position: relative; }
+.dna-story .cell-art { opacity: 0.55; }
+@media (max-width: 700px) {
+  .dna-strand {
+    object-fit: fill;
+    width: 170%;
+    left: -35%;
+    opacity: 0.28;
+  }
+}
+
+/* Edge-to-edge stories connect each photograph to its page. */
+.image-story {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  min-height: clamp(560px, 48vw, 760px);
+  display: flex;
+  align-items: flex-end;
+  padding: 70px 6%;
+  background: #263542;
+  color: #fff;
+}
+.image-story-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-story::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, #0c1925ed, #0c19255c 48%, transparent 78%);
+}
+.image-story-copy {
+  max-width: 620px;
+}
+.image-story-copy .eyebrow {
+  color: #e3e7ec;
+  margin-bottom: 22px;
+}
+.image-story-copy h2 {
+  font-size: clamp(40px, 5vw, 70px);
+  line-height: 1.06;
+  letter-spacing: -2.5px;
+  margin-bottom: 22px;
+}
+.image-story-copy > p:not(.eyebrow) {
+  max-width: 430px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #eef1f5;
+  margin-bottom: 0;
+}
+.image-story-vial,
+.image-story-people {
+  align-items: center;
+}
+.image-story-vial::before,
+.image-story-people::before {
+  background: linear-gradient(90deg, #0c1925ed, #0c192599 38%, transparent 75%);
+}
+.image-story-vial { margin-bottom: 70px; }
+.image-story-people { margin-bottom: 70px; }
+.image-story-reception { min-height: 540px; }
+.image-story-reception .image-story-photo { object-position: center 42%; }
+@media (max-width: 700px) {
+  .image-story {
+    min-height: 600px;
+    padding: 45px 6%;
+    align-items: flex-end;
+  }
+  .image-story-copy h2 {
+    font-size: clamp(36px, 10vw, 48px);
+    letter-spacing: -1.5px;
+  }
+  .image-story-copy > p:not(.eyebrow) { font-size: 14px; }
+  .image-story-vial::before,
+  .image-story-people::before {
+    background: linear-gradient(0deg, #0c1925f5, #0c192580 45%, transparent 78%);
+  }
+  .image-story-vial .image-story-photo { object-position: 58% center; }
+  .image-story-people .image-story-photo { object-position: 70% center; }
+  .image-story-reception .image-story-photo { object-position: 46% center; }
+  .image-story-vial,
+  .image-story-people { margin-bottom: 45px; }
+}
+
 /* Detailed microscopy imagery inside softly rounded research panels. */
 .research-micrograph {
   display: block;
